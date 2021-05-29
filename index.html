@@ -8,3 +8,34 @@
 		xx
 	</body>
 </html>
+
+<script>
+	//模板字符串
+	/*let a = 3;
+	let b = 2;
+	let num = a + b;
+	document.write( `${ num } `)*/
+	
+	
+	
+	//es7异步函数
+	async function fn(){
+		try{
+			let p = await new Promise((resolve,reject)=>{
+				reject('55')
+			});
+			
+		}catch(error){			//try和catch语法用于处理await错误，避免错误时，后面的代码不执行
+			
+			console.log(error)
+		}
+		
+		
+		console.log(66)
+		
+	}
+	fn();
+	
+
+	
+</script>
